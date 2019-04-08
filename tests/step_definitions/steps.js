@@ -18,7 +18,7 @@ Given('я вижу информацию о успешном логине', ()=>{
 });
 
 Given('я нажимаю на логаут', ()=>{
-    I.wait(5);
+    I.wait(6);
     I.retry({ retries: 3, minTimeout: 1000 }).click('.dropdown-toggle');
     I.retry({ retries: 5, minTimeout: 1000 }).click('Logout', '.dropdown-menu');
 });

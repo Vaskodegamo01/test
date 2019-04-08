@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://localhost:3000',
-      show: true
+      show: process.env.BROWSER == "false" ? false : true
     }
   },
   include: {
